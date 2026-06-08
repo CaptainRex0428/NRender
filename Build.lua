@@ -2,7 +2,7 @@ include "Directory.lua"
 include "Dependencies.lua"
 include "Config.lua"
 
-workspace "CommonCPPTemplate"
+workspace "NRender"
 	architecture "x64"
 	startproject "EntryProject"
 	configurations
@@ -20,3 +20,4 @@ workspace "CommonCPPTemplate"
 
 group ""
 	include "EntryProject.lua"
+	include "Dependencies/imgui.lua"

@@ -1,0 +1,36 @@
+[
+  {
+    "version" : 2
+  },
+  {
+    "action" : {
+      "script" : "echo ${repo:name} status:\n\ncursor .",
+      "showOutput" : true,
+      "type" : "sh",
+      "waitForExit" : true
+    },
+    "name" : "Open With Cursor",
+    "target" : "repository"
+  },
+  {
+    "action" : {
+      "script" : "echo ${repo:name} status:\n\ncode .",
+      "showOutput" : true,
+      "type" : "sh",
+      "waitForExit" : true
+    },
+    "name" : "Open With VSCode",
+    "target" : "repository"
+  },
+  {
+    "action" : {
+      "script" : "echo ${repo:name} status:\n\nScripts/Premake/premake5.exe --file=Build.lua vs2022",
+      "showOutput" : true,
+      "type" : "sh",
+      "waitForExit" : true
+    },
+    "name" : "Refresh Solution Settings",
+    "target" : "repository"
+  }
+]
+  
